@@ -1,6 +1,18 @@
-def main():
-    print("Hello from ml-based-url-validation-chrome-extension!")
+from src.exception.exception import MyException
+from src.logging.logger import my_logger
+import sys
+import os
+import pandas as pd
+from src.pipeline.train_pipeline import train_pipeline
 
 
-if __name__ == "__main__":
-    main()
+
+my_logger.info("<<<<< main.py >>>>>>")
+
+obj = train_pipeline()
+obj.initiate_train_pipeline()
+
+my_logger.info("<<<<< main.py >>>>>>")
+
+
+        
