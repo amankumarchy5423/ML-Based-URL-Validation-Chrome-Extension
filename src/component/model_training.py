@@ -69,12 +69,12 @@ class Model_Training:
             my_logger.info("data loaded....")
 
             models = {
-            "Logistic Regression": LogisticRegression(max_iter=1000),
-            "Decision Tree": DecisionTreeClassifier(),
-            "Random Forest": RandomForestClassifier(),
-            "SVM": SVC(probability=True),
-            "KNN": KNeighborsClassifier(),
-            "XGBoost": XGBClassifier(use_label_encoder=False, eval_metric='logloss'),
+            "Logistic Regression": LogisticRegression(max_iter=1000,verbose=1),
+            # "Decision Tree": DecisionTreeClassifier(),
+            # "Random Forest": RandomForestClassifier(verbose=1),
+            # "SVM": SVC(probability=True,verbose=1),
+            # "KNN": KNeighborsClassifier(),
+            # "XGBoost": XGBClassifier(use_label_encoder=False, eval_metric='logloss'),
             }
             my_logger.info("set of all classier")
 
